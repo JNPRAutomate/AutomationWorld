@@ -55,7 +55,8 @@ DHCP Option 66: | | This is for TFTP/HTTP/FTP server name. Operator should be aw
 -or- | |
 DHCP Option 150 | | To specify the IP address of the FTP, HTTP, or TFTP server.
 		
-ZTP Specific Sub option codes: | |		
+ZTP Specific Sub option codes: | |
+------------------------------ | - | - 
 00	| Image File | This is the image file name, which is used by DHCP client for requesting HTTP/FTP/TFTP server.
 01	| Configuration file. | This is the configuration file name, which is used by DHCP client for requesting HTTP/FTP/TFTP server.
 02	| Symbolic link to the software image file to install | If this option is not set, ZTP handles the software image as a filename, not a symbolic link.
@@ -63,6 +64,7 @@ ZTP Specific Sub option codes: | |
 04	| Alternate Image | When the DHCP server cannot use vendor sub option 00, configure image file using sub option 04. If both sub option 00 and sub option 4 are defined, sub option 04 is ignored.
 		
 Additional options to be processed:	 |  | 
+----------------------------------- | - | -
 DHCP Option 42:  | 	NTP Server | NTP server is to perform time synchronization on the network.
 DHCP Option 07:  | 	Syslog Server | System log (syslog) server to manage system log messages and alerts.
 DHCP Option 12:  | 	Hostname | To specify the hostname of the switch.
