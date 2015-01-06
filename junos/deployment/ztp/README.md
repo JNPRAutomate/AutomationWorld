@@ -50,6 +50,7 @@ subnet 172.32.32.0 netmask 255.255.255.0 {
 ## ZTP DHCP Options codes
 
 Required ZTP Options: | Purpose | Description
+--------------------- | ------- | -----------
 DHCP Option 66: | | This is for TFTP/HTTP/FTP server name. Operator should be aware that this option usage comes with certain conditions till DNS resolving capability is supported. Till DNS resolving support is implemented, option 66 should send IP address in string format.
 -or- | |
 DHCP Option 150 | | To specify the IP address of the FTP, HTTP, or TFTP server.
