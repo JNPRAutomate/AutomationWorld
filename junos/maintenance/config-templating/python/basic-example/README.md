@@ -67,16 +67,21 @@ tmpl_file.close()
 #first we instantiate an instance of the device
 junos_dev = JunosDevice(host="1.2.3.4",username="root",password="Juniper")
 #now we can connect to the device
-dev.open()
+junos_dev.open()
 #we then open the configuration
-dev.open_config()
+junos_dev.open_config()
 #lets go ahead and load the configuration.
-dev.load_config_template(tmpl_data,my_variables)
+junos_dev.load_config_template(tmpl_data,my_variables)
 #commit and close the config
-dev.commit_and_quit()
+junos_dev.commit_and_quit()
 #lastly we close the connection to the device
-dev.close()
+junos_dev.close()
+
 ```
+
+#### Alternate configuration templates
+
+Junos supports many different configuration loading types. Previously we showed the standard Junos configuration format. However some users prefer to use the "set" style of commands. Here is an example of loading the set style commands. It is almost identidal to the previous example. There are two differences which are specified below.
 
 This example is found within this directory as "set-config.tmpl".
 
@@ -88,7 +93,38 @@ set system services netconf ssh
 set system services web-management http interface ge-0/0/0.0
 ```
 
+This template varies greatly from the previous example of a Junos config. In this example we use the Junos set commands that are used if you were to manually configure the device. There isn't a specific benefit to either configuration type. Each organization may prefer a different type of configuration to load. Junos gives you the option to load a text config (standard Junos), set config (set/delete commands), or an XML configuration.
+
 This example is found within this directory as "set-config.py".
 
 ```
+from pyJunosManager import JunosDevice
+
+#template variables are added to a dict or dictionary. A dict is simply a key/value store data structure
+my_variables = {"hostname":"SetConfig","enc_password":"$1$MwLiep8p$l5g17Euco.AqvBH5Kd/VC/","ssh_root_login":"allow"}
+
+#lets read in the file
+#first we open in in read only mode
+tmpl_file = open("set-config.tmpl","r")
+#next we read all the data into a variable
+tmpl_data = tmpl_file.read()
+#lastly we close the file since we are done reading it
+tmpl_file.close()
+
+#now lets connect to the device, load the template, and commit the changes
+#first we instantiate an instance of the device
+junos_dev = JunosDevice(host="172.16.237.128",username="root",password="Juniper")
+#now we can connect to the device
+junos_dev.open()
+#we then open the configuration
+junos_dev.open_config()
+#lets go ahead and load the configuration.
+junos_dev.load_config_template(tmpl_data,my_variables,type="set")
+#commit and close the config
+junos_dev.commit_and_quit()
+#lastly we close the connection to the device
+junos_dev.close()
+
 ```
+
+This example is almost identical. The difference we have here is that when loading the configuration we must specify the type. As we are using the set commands we specify the type as "set". In the previous example we didn't specify the type as the "text" type is the default.

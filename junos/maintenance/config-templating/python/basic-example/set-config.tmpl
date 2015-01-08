@@ -1,0 +1,5 @@
+set system host-name {{ hostname }}
+set system root-authentication encrypted-password "{{ enc_password }}"
+set system services ssh root-login {{ ssh_root_login }}
+set system services netconf ssh
+set system services web-management http interface ge-0/0/0.0

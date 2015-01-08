@@ -1,1 +1,1 @@
-pyJunosManager>=0.2
+pyJunosManager>=0.4
