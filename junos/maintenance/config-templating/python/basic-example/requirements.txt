@@ -1,0 +1,1 @@
+pyJunosManager>=0.2

@@ -1,0 +1,19 @@
+system {
+    host-name {{ hostname }};
+    root-authentication {
+        encrypted-password "{{ enc_password }}";
+    }
+    services {
+        ssh {
+            root-login {{ ssh_root_login }};
+        }
+        netconf {
+            ssh;
+        }
+        web-management {
+            http {
+                interface ge-0/0/0.0;
+            }
+        }
+    }
+}
