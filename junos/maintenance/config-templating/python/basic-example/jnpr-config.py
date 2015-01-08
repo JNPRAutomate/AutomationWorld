@@ -13,7 +13,7 @@ tmpl_file.close()
 
 #now lets connect to the device, load the template, and commit the changes
 #first we instantiate an instance of the device
-junos_dev = JunosDevice(host="172.16.237.12",username="root",password="Juniper")
+junos_dev = JunosDevice(host="1.2.3.4",username="root",password="Juniper")
 #now we can connect to the device
 junos_dev.open()
 #we then open the configuration
