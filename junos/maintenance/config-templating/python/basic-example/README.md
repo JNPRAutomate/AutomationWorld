@@ -39,8 +39,6 @@ system {
 }
 ```
 
-This example is found within this directory as "set-config.tmpl".
-
 The configuration template is setting up a few management options for us. This would be typical of most organizations and their need to bootstrap devices. In this template we have three defined variables: hostname, enc_password, and ssh_root_login. These variables are contained within a set of special brackets "{{ }}". These brackets tell the Jinja engine that the string within the brackets are the variable names. Once you apply the template to render it replaces the brackets and the name with the data you have chosen. In this case render isn't a complex process that includes 3D textures it simple means to replace these values with the ones I provide.
 
 ### Python script
