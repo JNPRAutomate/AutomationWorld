@@ -9,7 +9,7 @@ Python comes in many different flavors, versions, and installations. Most UNIX-l
 The best practice is to utilize a virtual environment. A virtual environment is simply a self-contained hierarchy of a Python installation. The trick to utilize it is simply changing your path to point to the new Python environment. While that does sound tricky the good news is that this is a common problem. Because of that some tools exist to assist you in creating your Python virtual environment. Almost all languages utilize this neat trick.
 
 Python 2 vs Python 3
-----------------------------------
+--------------------
 
 While Python has many different releases there is a divide between Python 2 and Python 3. Python 3 brings many new features to the language, however most people tend to use Python 2.7 due to the multitude of packages available.
 
@@ -38,7 +38,7 @@ Most popular on Mac and Linux
 
 ### Python 3 Virtual Environments
 
-- [pyenv](https://docs.python.org/3/library/venv.html)
+-	[pyenv](https://docs.python.org/3/library/venv.html)
 
 Using PIP to install packages
 =============================
@@ -71,9 +71,18 @@ pip freeze > requirements.txt
 
 ### What exactly is in a requirements file?
 
-A requiremetns file is simply a key/value pairing of the installed modules
+A requirements file is simply a key/value pairing of the installed modules
 
-#### Example file
+#### Examples
+
+Example format
+
+```
+PKGNAME==1.0 #specific version
+PKGNAME>=1.0 #version 1.0 or greater
+```
+
+Example file
 
 ```
 Jinja2==2.7.3
