@@ -1,2 +1,2 @@
-Simplifiying the deployment of Junos
-====================================
+Simplifying the deployment of Junos
+===================================
