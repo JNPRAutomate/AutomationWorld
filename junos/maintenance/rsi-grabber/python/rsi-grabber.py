@@ -1,9 +1,3 @@
-RSI-Grabber
-===========
-
-Off-box Python-based RSI grabber
-
-```
 from jnpr.junos import Device
 import xml.etree.ElementTree as ET
 
@@ -18,4 +12,3 @@ rsi_output = junos_dev.rpc.get_support_information()
 print ET.tostring(rsi_output,encoding="utf8", method="text")
 #lastly we close the connection to the device
 junos_dev.close()
-```
