@@ -100,3 +100,9 @@ scp==0.8.0
 wsgiref==0.1.2
 
 ```
+
+Great Learning Sites
+--------------------
+
+-	[Python for Network Engineers](https://pynet.twb-tech.com/)
+-	[Learn Python the Hard Way](http://learnpythonthehardway.org/)
