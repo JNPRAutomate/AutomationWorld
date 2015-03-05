@@ -14,4 +14,4 @@ Build components for a ZTP Rasberry Pi
 - [Screen Instructions](https://learn.adafruit.com/adafruit-pitft-28-inch-resistive-touchscreen-display-raspberry-pi/easy-install)
 
 ## ISC DHCP Config
--[Config](https://github.com/JNPRAutomate/AutomationWorld/tree/master/junos/deployment/ztp)
+- [Config](https://github.com/JNPRAutomate/AutomationWorld/tree/master/junos/deployment/ztp)
