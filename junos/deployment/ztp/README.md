@@ -51,9 +51,9 @@ subnet 172.32.32.0 netmask 255.255.255.0 {
 ```
 Required ZTP Options: | Purpose | Description
 --------------------- | ------- | -----------
-DHCP Option 66: | | This is for TFTP/HTTP/FTP server name. Operator should be aware that this option usage comes with certain conditions till DNS resolving capability is supported. Till DNS resolving support is implemented, option 66 should send IP address in string format.
+DHCP Option 66:       | 	| This is for TFTP/HTTP/FTP server name. Operator should be aware that this option usage comes with certain conditions till DNS resolving capability is supported. Till DNS resolving support is implemented, option 66 should send IP address in string format.
 -or- | |
-DHCP Option 150 | | To specify the IP address of the FTP, HTTP, or TFTP server.
+DHCP Option 150       | 	| To specify the IP address of the FTP, HTTP, or TFTP server.
 		
 ZTP Specific Sub option codes: | |
 ------------------------------ | - | - 
@@ -63,9 +63,9 @@ ZTP Specific Sub option codes: | |
 03	| Transfer Mode | Transfer mode (TFTP/FTP/HTTP) that the switch uses to access the TFTP/FTP/HTTP server for retrieving file(s).
 04	| Alternate Image | When the DHCP server cannot use vendor sub option 00, configure image file using sub option 04. If both sub option 00 and sub option 4 are defined, sub option 04 is ignored.
 		
-Additional options to be processed:	 |  | 
------------------------------------ | - | -
-DHCP Option 42:  | 	NTP Server | NTP server is to perform time synchronization on the network.
-DHCP Option 07:  | 	Syslog Server | System log (syslog) server to manage system log messages and alerts.
-DHCP Option 12:  | 	Hostname | To specify the hostname of the switch.
+Additional options to be processed:
+-----------------|---------------|-----------------------------------------------------------------------------|
+DHCP Option 42:  | NTP Server 	 | NTP server is to perform time synchronization on the network.
+DHCP Option 07:  | Syslog Server | System log (syslog) server to manage system log messages and alerts.
+DHCP Option 12:  | Hostname 	 | To specify the hostname of the switch.
 ```
