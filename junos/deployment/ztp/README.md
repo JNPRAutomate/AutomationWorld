@@ -48,7 +48,7 @@ subnet 172.32.32.0 netmask 255.255.255.0 {
 # Advanced Notes
 
 ## ZTP DHCP Options codes
-
+```
 Required ZTP Options: | Purpose | Description
 --------------------- | ------- | -----------
 DHCP Option 66: | | This is for TFTP/HTTP/FTP server name. Operator should be aware that this option usage comes with certain conditions till DNS resolving capability is supported. Till DNS resolving support is implemented, option 66 should send IP address in string format.
@@ -68,3 +68,4 @@ Additional options to be processed:	 |  |
 DHCP Option 42:  | 	NTP Server | NTP server is to perform time synchronization on the network.
 DHCP Option 07:  | 	Syslog Server | System log (syslog) server to manage system log messages and alerts.
 DHCP Option 12:  | 	Hostname | To specify the hostname of the switch.
+```
