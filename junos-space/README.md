@@ -14,7 +14,7 @@ Space is a platform and it has many applications that can run on top of it. Howe
 	-	The auth model is HTTP/S Basic auth
 -	[Junos Device Management](http://www.juniper.net/techpubs/en_US/junos-space-sdk/13.1/apiref/com.juniper.junos_space.sdk.help/JSDeviceManagerSvc/Docs/index.html)
 	-	Covers listing devices and understanding the properties of devices
--	[Auditlogging](http://www.juniper.net/techpubs/en_US/junos-space-sdk/13.1/apiref/com.juniper.junos_space.sdk.help/JSAuditlogManagerSvc/Docs/index.html)
+-	[Audit Logging](http://www.juniper.net/techpubs/en_US/junos-space-sdk/13.1/apiref/com.juniper.junos_space.sdk.help/JSAuditlogManagerSvc/Docs/index.html)
 
 Security Director APIs
 ----------------------
