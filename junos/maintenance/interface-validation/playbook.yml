@@ -1,0 +1,17 @@
+
+---
+- name: Check subnet complaince
+  hosts: switches
+  connection: local
+  gather_facts: no
+  vars:
+    junos_user: "jnpr"
+    junos_password: "pass123"
+    subnet_to_check: "172.16.0.0/16"
+
+  tasks:
+      - name: Checking intefaces on hosts
+        script: ./checker.py --host {{ inventory_hostname }} --username {{ junos_user }} --password {{ junos_password }} --subnet {{ subnet_to_check }}
+        register: result
+
+      - debug: var=result
