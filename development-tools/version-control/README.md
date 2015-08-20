@@ -13,3 +13,5 @@ Git
 -	[Git Resources](http://git-scm.com/doc/ext)
 -	[Git GUI Clients](http://git-scm.com/downloads/guis)
 -	[libgit2 bindings](https://libgit2.github.com/)
+- [Mac GitHub Tool](https://mac.github.com/)
+- [Windows GitHub Tool](https://windows.github.com/)
