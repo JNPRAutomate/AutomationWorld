@@ -71,4 +71,8 @@ Go Tips
 
 ### Dealing with GOPATH
 
-\-[GOPATH Basics](https://golang.org/doc/code.html#GOPATH) -[GOPATH Wiki](https://code.google.com/p/go-wiki/wiki/GOPATH) -[GOPATH ENV](http://golang.org/cmd/go/#hdr-GOPATH_environment_variable) -[GOPATH Stackoverflow](http://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot) -[GOPATH Stackoverflow](http://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot/7971481#7971481)
+- [GOPATH Basics](https://golang.org/doc/code.html#GOPATH) 
+- [GOPATH Wiki](https://code.google.com/p/go-wiki/wiki/GOPATH) 
+- [GOPATH ENV](http://golang.org/cmd/go/#hdr-GOPATH_environment_variable) 
+- [GOPATH Stackoverflow](http://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot) 
+- [GOPATH Stackoverflow](http://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot/7971481#7971481)
